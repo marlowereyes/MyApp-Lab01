@@ -1,0 +1,77 @@
+:root {
+  font-family:'Courier New', Courier, monospace;
+  line-height: 1.5;
+  font-weight: 900;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #F1B5E8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.content-container > h1 {
+  font-size: 48px;
+  color: #6C37D2;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  background-color: #6C37D2;
+  padding: 3rem;
+  border-radius: 50px;
+}
+
+.albums > h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #EE82E9;
+}
+
+.artistImg {
+  width: 350px;
+  height: 500px;
+  box-shadow: 5px 5px 10px 1px rgb(44, 37, 45);
+}
+
+.spilled {
+  color: red;
+}
+
+details {
+  border-bottom: 4px solid #EE82E9;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  color: #EE82E9;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+details[open] {
+  padding: 0.5em;
+  color: #EE82E9;
+  border: none;
+}
+
+details[open] summary {
+  background-color: #EE82E9;
+  color: #F1B5E8;
+}
